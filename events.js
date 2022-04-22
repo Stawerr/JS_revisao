@@ -1,4 +1,5 @@
 import { Contact } from "./model/contact.js"
+import ContactValidator from "./validators/contact/index.js"
 
 //UseCase - Gravar o contacto
 function setupForm(selector, parent=document) {
@@ -20,7 +21,8 @@ function setupForm(selector, parent=document) {
         }
         console.log(formObject)
         //Validação de dados
-
+        ContactValidator.exec(formObject.fullname)
+        
         //Guardar os dados
 
         const contact=new Contact(formObject)

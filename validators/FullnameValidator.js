@@ -9,3 +9,5 @@ class ContactFullNameValidator{
         if(!fullname) throw new ContactFullNameEmptyErro('Exemplo')
     }
 }
+
+export{ContactFullNameValidator}
