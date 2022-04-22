@@ -5,7 +5,7 @@ class ContactFullNameValidator{
         this.isEmpty(fullname)
     }
 
-    isEmpty(fullname){
+    static isEmpty(fullname){
         if(!fullname) throw new ContactFullNameEmptyErro('Exemplo')
     }
 }
